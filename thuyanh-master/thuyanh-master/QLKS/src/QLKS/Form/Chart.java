@@ -260,7 +260,8 @@ public class Chart extends javax.swing.JFrame {
         dataset.setValue(s3,"","Phòng đặc biệt");
         dataset.setValue(s4,"","Phòng VIP");
         
-        JFreeChart chart = ChartFactory.createBarChart3D("Số lượng còn (Phòng)", "", "",
+        JFreeChart chart;
+        chart = ChartFactory.createBarChart("Số lượng còn (Phòng)", "", "",
                 dataset, PlotOrientation.VERTICAL, false, false, false);
         CategoryPlot catPlot = chart.getCategoryPlot(); 
         catPlot.setRangeGridlinePaint(Color.BLACK);
